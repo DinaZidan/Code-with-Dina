@@ -1,0 +1,452 @@
+/*first we check if the link works by using */
+/*
+*{
+    background-color: aqua;
+}
+*/
+*{
+   font-family: Verdana;
+
+    /*it help you with padding or margin */
+    box-sizing: border-box;
+
+    /*your page by default have margin and padding and you should stop them cause they make 
+    your job diffcult*/
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+
+/*this first section of our project*/
+
+header{
+    /*to make the header and links arranged*/
+    display: flex;
+
+    /* to make one in first and other in last with large space*/
+    justify-content: space-between;
+
+    background-color: rgb(36, 32, 59);
+    color: white;
+    align-items: center;
+
+    /*note must px not %*/
+    padding:0px 100px;
+
+    border-top: solid crimson 3px;
+
+    /*to make your nav bar constant do not move and you must make width 100 */
+    position: fixed;
+    width: 100%;
+
+    /*now this code help us to make the header be the highest lyer in the page*/
+    z-index: 999;
+
+}
+/*now to style the links you should specify it */
+header a{
+    color: white;
+    /* to remove the line under the text */
+    text-decoration: none;
+
+    /* to make more space between links*/
+    margin-right: 10px;
+
+    transition: ease, 1s;
+    font-size: 20px;
+    
+}
+
+header a:hover{
+    color: rgb(62, 140, 153);
+    font-size: 23px;
+}
+
+/*this is the seconed section of our project*/
+
+.carsour{
+    height:100vh ;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    padding: 0px 100px;
+    background-image: url(images/ben-griffiths-Bj6ENZDMSDY-unsplash.jpg);
+   /*now your image is fucking horrrible to fix it*/
+    background-size: cover;
+
+   /* this statement is always activited*/
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgb(89, 85, 85);
+    background-position: center;
+
+}
+
+.carsour span{
+    color: rgb(221, 35, 35);
+}
+
+.carsour a{
+    color: aliceblue;
+    background-color: rgb(38, 50, 71);
+    text-decoration: none;
+    border-radius: 10px ;
+    padding: 10px;
+    /* to make the border of the buttom be good*/
+    display: inline-block;
+    font-size: 18px;
+    transition: ease 1s;
+}
+
+.carsour a:hover{
+    font-size: 20px;
+    background-color: rgb(144, 88, 47);
+}
+
+/*the thired section*/
+
+.services h2{
+    text-align: center;
+    margin: 0px 30px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: rgb(35, 50, 77);
+}
+
+.services .container{
+    display: flex;
+    padding: 0px 80px ;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.services .card{
+    
+    margin: 0px 20px;
+    box-shadow:3px 3px 3px 3px rgb(191, 194, 199) ;
+    padding: 10px ;
+    width: 16em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card h3{
+    color: brown;
+
+    /*to make the font large you can use this*/
+    font-weight: 1000px;
+
+}
+
+.card p{
+    font-size: 14px;
+    color: black;
+
+}
+/*you should take care about spaces when you use this code in down*/
+.services .card > div{
+    color: rgb(36, 36, 72);
+    font-size: 50px;
+}
+
+/*now we start style the forty section*/
+.proto{
+    background-color: rgb(36, 36, 70);
+    text-align: center;
+    padding: 30px 100px;
+    
+}
+
+.proto h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    border-bottom: solid;
+    /* here we will find a big problem that the line under the h2 will be very big */
+    /* the solve */
+    display: inline-block;
+    font-size: 30px;
+}
+
+/*we did this code cause we need the cards be beside each others*/
+
+.contain{
+  display: flex;
+  justify-content: center;
+}
+
+.proto .card{
+    background-color: rgb(252, 252, 252);
+    width: 230px;
+    height: 430px;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+}
+
+.image-card{
+    background-color: aqua;
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px;
+    font-size: 30px;
+}
+    
+.card1{
+    background-image: url(images/natasha-connell-wjhvEvJ07rI-unsplash.jpg);
+}
+.card2{
+    background-image: url(images/b0664c172bed80e1434a204f2f13491d.webp);
+}
+.card3{
+    background-image: url(images/enrique-guzman-egas-CBLZInbKnZU-unsplash.jpg);
+}
+.card4{
+    background-image: url(images/evan-qu-aRph1oi5GM8-unsplash.jpg);
+}
+
+.card h2{
+    font-size: 25px;
+    color: rgb(37, 41, 70);
+
+}
+.card p{
+    font-size: 15px;
+   
+
+}
+
+
+
+
+
+
+
+.proto button{
+color: aliceblue;
+border-radius: 7px;
+background-color: rgb(159, 45, 45);
+padding: 5px 10px;
+border: none;
+font-size: 15px;
+
+}
+.proto button:hover{
+    transform: scale(1.1);
+    transition: ease-in 1s;
+}
+
+.proto .card-desc{
+    margin: 0px 10px;
+  
+    align-items: end;
+    text-align: center;
+    text-justify: inter-ideograph;
+}
+.proto .card-desc p{
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+
+.proto .card-desc button{
+    flex-shrink: 0px;
+    align-self: end;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+/*now stylling the 5rd section in the project*/
+.nutella{
+    padding:  50px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nutella-desc{
+    width: 60%;
+}
+
+.nutella h2{
+    color: brown;
+    text-align: center;
+}
+
+.nutella-img{
+    width: 30%;
+    margin-right: 30px;
+    border-radius: 10px;
+   overflow: hidden;
+    box-shadow: 5px 5px 2px rgb(102, 102, 103) ;
+
+
+}
+
+.nutella p{
+  font-size: 19px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.about{
+    padding: 50px;
+    background-image: url(images/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
+    min-height: 60vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgb(97, 95, 95);
+}
+
+.about>div{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.about img{
+    width: 18em;
+    height: 18em;
+    border-radius: 50%;
+    border: solid brown;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.about .contain h2{
+    align-items: center;
+    font-size: 50px;
+    color: rgb(209, 44, 44);
+    justify-content: center;
+}
+
+.nutella-img-rtl{
+    width: 30%;
+    margin-left: 30px;
+    border-radius: 10px;
+   overflow: hidden;
+    box-shadow: 5px 5px 2px rgb(102, 102, 103) ;
+}
+/*now watch out that you do not put (.) before the footer cause it is not a class*/
+footer{
+    text-align: center;
+    background-color: rgb(36, 36, 60);
+    font-style: italic;
+    color: aliceblue;
+    padding: 20px;
+}
+
+/*now we make the scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(138, 137, 137); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(39, 25, 82); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3db0b8; 
+  }
+/* now we make small button in our project*/
+.up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(47, 57, 98);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+.map{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.map div{
+    width: 100%;
+}
+.map iframe{
+    width: 100%!important;
+    box-shadow: 0px 10px 35px 0px lightblue;
+}
+
+.contact h2{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: solid;
+    display: inline-block;
+}
+
+.contact{
+    padding: 100px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(63,63,128,1) 35%, rgba(0,212,255,1) 100%);
+text-align: center;
+
+}
+.input-form{
+     
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    /*to make the form move with us*/
+    position: relative;
+    height: 40px;
+}
+.input-form input{
+    border-bottom: solid aquamarine;
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: 0px 5px;
+    height: 40px;
+    font-size: 16px;
+}
+.input-form label{
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 10px;
+   transform: translateY(-50%);
+ 
+ 
+}
+.input-form label:hover{
+top: 13%;
+}
+
+.send{
+    color: rgb(248, 245, 245);
+    background-color: rgb(37, 34, 85);
+    border-radius: 17px;
+    transition: ease 1s;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    
+    
+}
+.send:hover{
+    transform: scale(1,1);
+    background-color: #3db0b8;
+}
