@@ -1,4 +1,4 @@
-# Code-with-Dina
+# small-protofolio
 ##Basic application of css and html basics
 Great for beginners
 ###RESOURCES
